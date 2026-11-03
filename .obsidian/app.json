@@ -1,0 +1,11 @@
+{
+  "userIgnoreFilters": [
+    "archive/",
+    "system/",
+    "log/",
+    "j_brain/"
+  ],
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": true
+}

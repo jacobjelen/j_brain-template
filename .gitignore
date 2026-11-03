@@ -1,0 +1,7 @@
+*.pyc
+.DS_Store
+.obsidian/cache
+.obsidian/workspace*.json
+__pycache__/
+system/mods/*/.claude-plugin/types/
+system/mods/*/tsconfig.json

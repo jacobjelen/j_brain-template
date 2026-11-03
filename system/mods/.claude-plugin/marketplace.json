@@ -1,0 +1,7 @@
+{
+  "name": "j-brain-mods",
+  "owner": { "name": "John Doe" },
+  "plugins": [
+    { "name": "j-brain-watch", "source": "./j-brain-watch", "description": "Toasts when a session reads j_brain or saves to its inbox" }
+  ]
+}
