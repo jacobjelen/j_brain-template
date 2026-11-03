@@ -12,15 +12,25 @@ There are many second brain setups out there, and most of them feel overly compl
 
 ![How j_brain works](system/brain.svg)
 
+<br>
+
 ## ✨ What makes it different
 
 - 🤖 **Made for agents, not for you.** You never open, tag or tidy it. Agents check it when they need context ("who is Maya?", "recommend a film") and save new facts as you talk.
+
 - 🔍 **Cheap to read.** Agents search instead of reading whole notes: the search returns only summaries and matching lines, and an index says where each kind of fact lives. Agents only get a 5-line pointer to it, so a session that doesn't need it spends nothing on it.
+
 - 🗄️ **It forgets on purpose.** Projects, clients and plans unused for 180 days move to an archive, so the brain stays small and current.
+
 - 🌙 **It maintains itself.** Agents only drop things into `inbox/`. Every night one agent sorts it into notes and rewrites outdated facts instead of piling them up.
+
 - 🔄 **One brain for every agent.** Claude Code, Codex and Cursor share it. Tell one, and the others know the next day.
+
 - 🎓 **It learns from mistakes.** Your corrections become rules every agent follows, and agents report what they couldn't find.
+
 - 🔒 **Safe and plain.** Every fact links to its source. Secrets are never stored. It's markdown in git, so every change can be undone.
+
+<br>
 
 ## 🚀 Set it up
 
@@ -49,6 +59,8 @@ Set up j_brain, a second brain for AI agents, for me. Steps:
 
 ✅ That's it. From then on, every agent knows the brain exists, checks it when a task needs context about you, and saves what it learns.
 
+<br>
+
 ## 🗂️ How it works
 
 | Folder | What's in it |
@@ -66,7 +78,10 @@ Set up j_brain, a second brain for AI agents, for me. Steps:
 > [!NOTE]
 > **Example data:** this template comes filled with notes about John Doe, a fictional person, so you can see what a working brain looks like. The setup prompt deletes them.
 
+<br>
+
 ## 🧪 Tests
+
 ```bash
 python3 system/scripts/test_scripts.py   # the scripts
 python3 system/scripts/lint.py           # the notes: frontmatter, links, sources
