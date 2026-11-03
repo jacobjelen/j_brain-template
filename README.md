@@ -1,22 +1,29 @@
-# j_brain
+<div align="center">
+
+# 🧠 j_brain
 
 **A second brain for your AI agents, not for you.**
+
+Plain markdown · Claude Code · Codex · Cursor · Cleans up after itself
+
+</div>
 
 There are many second brain setups out there, and most of them feel overly complicated: plugins, tagging systems, daily notes you never keep up with. This is my simple version. It's a folder of plain markdown that your AI agents (Claude Code, Codex, Cursor) read before helping you, and that fills itself in from your conversations.
 
 ![How j_brain works](system/brain.svg)
 
-## What makes it different
+## ✨ What makes it different
 
-- **Made for agents, not for you.** You never have to open, tag or tidy it. Agents search it when they need context ("who is Maya?", "recommend a film", "prep my meeting with Acme") and save new facts as you talk. You can browse it in Obsidian if you like, but you don't have to.
-- **It forgets on purpose.** Projects, clients and plans that nobody has used for 180 days are moved to an archive automatically. The brain stays small and current instead of piling up stale, irrelevant notes.
-- **It maintains itself.** Agents only drop things into `inbox/`. Once a night, one agent (the digest) sorts the inbox into tidy notes, rewrites outdated facts and logs what it changed.
-- **Every fact has a source.** Each note links to the original conversation it came from, so agents can check facts and you can see where something came from.
-- **Plain files, no lock-in.** Markdown in a git repo. Works with any agent that can read files.
+- 🤖 **Made for agents, not for you.** You never have to open, tag or tidy it. Agents search it when they need context ("who is Maya?", "recommend a film", "prep my meeting with Acme") and save new facts as you talk. You can browse it in Obsidian if you like, but you don't have to.
+- 🗄️ **It forgets on purpose.** Projects, clients and plans that nobody has used for 180 days are moved to an archive automatically. The brain stays small and current instead of piling up stale, irrelevant notes.
+- 🌙 **It maintains itself.** Agents only drop things into `inbox/`. Once a night, one agent (the digest) sorts the inbox into tidy notes, rewrites outdated facts and logs what it changed.
+- 🔗 **Every fact has a source.** Each note links to the original conversation it came from, so agents can check facts and you can see where something came from.
+- 📄 **Plain files, no lock-in.** Markdown in a git repo. Works with any agent that can read files.
 
-## Set it up
+## 🚀 Set it up
 
-Copy this prompt into Claude Code or Codex:
+> [!TIP]
+> One step: copy this prompt into Claude Code or Codex. The agent does the rest.
 
 ```text
 Set up j_brain, a second brain for AI agents, for me. Steps:
@@ -38,25 +45,26 @@ Set up j_brain, a second brain for AI agents, for me. Steps:
 8. Finally, use the brain-onboard skill to interview me for 5 minutes, so the brain isn't empty.
 ```
 
-That's it. From then on, every agent knows the brain exists, checks it when a task needs context about you, and saves what it learns.
+✅ That's it. From then on, every agent knows the brain exists, checks it when a task needs context about you, and saves what it learns.
 
-## How it works
+## 🗂️ How it works
 
 | Folder | What's in it |
 |---|---|
-| `inbox/` | New facts and conversation transcripts, waiting for the digest. The only place agents write. |
-| `memory/long/` | Things that stay true: you, your people, taste, health, skills. Never archived. |
-| `memory/short/` | Things that come and go: projects, clients, plans. Archived after 180 days unused. |
-| `raw/` | The original sources, after the digest has read them. Notes link here. |
-| `log/` | What each nightly digest changed. |
-| `archive/` | Stale short-term notes. Agents don't read it unless you ask. |
-| `system/` | The rules, templates, skills, hooks and scripts that make it work. |
+| 📥 `inbox/` | New facts and conversation transcripts, waiting for the digest. The only place agents write. |
+| 🧠 `memory/long/` | Things that stay true: you, your people, taste, health, skills. Never archived. |
+| ⏳ `memory/short/` | Things that come and go: projects, clients, plans. Archived after 180 days unused. |
+| 📜 `raw/` | The original sources, after the digest has read them. Notes link here. |
+| 📝 `log/` | What each nightly digest changed. |
+| 🗄️ `archive/` | Stale short-term notes. Agents don't read it unless you ask. |
+| ⚙️ `system/` | The rules, templates, skills, hooks and scripts that make it work. |
 
-To add something by hand, tell any agent "remember that…", or drop a file into `inbox/`.
+💡 To add something by hand, tell any agent "remember that…", or drop a file into `inbox/`.
 
-**Example data:** this template comes filled with notes about John Doe, a fictional person, so you can see what a working brain looks like. The setup prompt deletes them.
+> [!NOTE]
+> **Example data:** this template comes filled with notes about John Doe, a fictional person, so you can see what a working brain looks like. The setup prompt deletes them.
 
-## Tests
+## 🧪 Tests
 ```bash
 python3 system/scripts/test_scripts.py   # the scripts
 python3 system/scripts/lint.py           # the notes: frontmatter, links, sources
