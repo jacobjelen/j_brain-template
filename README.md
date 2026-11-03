@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 j_brain
+<img src="system/banner.svg" alt="j_brain: a second brain for your AI agents" width="100%">
 
 **A second brain for your AI agents, not for you.**
 
@@ -14,11 +14,13 @@ There are many second brain setups out there, and most of them feel overly compl
 
 ## ✨ What makes it different
 
-- 🤖 **Made for agents, not for you.** You never have to open, tag or tidy it. Agents search it when they need context ("who is Maya?", "recommend a film", "prep my meeting with Acme") and save new facts as you talk. You can browse it in Obsidian if you like, but you don't have to.
-- 🗄️ **It forgets on purpose.** Projects, clients and plans that nobody has used for 180 days are moved to an archive automatically. The brain stays small and current instead of piling up stale, irrelevant notes.
-- 🌙 **It maintains itself.** Agents only drop things into `inbox/`. Once a night, one agent (the digest) sorts the inbox into tidy notes, rewrites outdated facts and logs what it changed.
-- 🔗 **Every fact has a source.** Each note links to the original conversation it came from, so agents can check facts and you can see where something came from.
-- 📄 **Plain files, no lock-in.** Markdown in a git repo. Works with any agent that can read files.
+- 🤖 **Made for agents, not for you.** You never open, tag or tidy it. Agents check it when they need context ("who is Maya?", "recommend a film") and save new facts as you talk.
+- 🔍 **Cheap to read.** Agents search instead of reading whole notes: the search returns only summaries and matching lines, and an index says where each kind of fact lives. Agents only get a 5-line pointer to it, so a session that doesn't need it spends nothing on it.
+- 🗄️ **It forgets on purpose.** Projects, clients and plans unused for 180 days move to an archive, so the brain stays small and current.
+- 🌙 **It maintains itself.** Agents only drop things into `inbox/`. Every night one agent sorts it into notes and rewrites outdated facts instead of piling them up.
+- 🔄 **One brain for every agent.** Claude Code, Codex and Cursor share it. Tell one, and the others know the next day.
+- 🎓 **It learns from mistakes.** Your corrections become rules every agent follows, and agents report what they couldn't find.
+- 🔒 **Safe and plain.** Every fact links to its source. Secrets are never stored. It's markdown in git, so every change can be undone.
 
 ## 🚀 Set it up
 
