@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" rx="18" fill="#f8fafc"/>
+
+  <!-- 1. conversations -->
+  <rect x="30" y="120" width="170" height="110" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="115" y="160" text-anchor="middle" font-size="30">💬</text>
+  <text x="115" y="192" text-anchor="middle" font-size="16" font-weight="600" fill="#0f172a">You chat with</text>
+  <text x="115" y="212" text-anchor="middle" font-size="16" font-weight="600" fill="#0f172a">any AI agent</text>
+
+  <!-- 2. inbox -->
+  <rect x="250" y="120" width="170" height="110" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="335" y="160" text-anchor="middle" font-size="30">📥</text>
+  <text x="335" y="192" text-anchor="middle" font-size="16" font-weight="600" fill="#0f172a">inbox/</text>
+  <text x="335" y="212" text-anchor="middle" font-size="13" fill="#475569">saved automatically</text>
+
+  <!-- 3. digest -->
+  <rect x="470" y="120" width="170" height="110" rx="14" fill="#eef2ff" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="555" y="160" text-anchor="middle" font-size="30">🌙</text>
+  <text x="555" y="192" text-anchor="middle" font-size="16" font-weight="600" fill="#0f172a">Nightly digest</text>
+  <text x="555" y="212" text-anchor="middle" font-size="13" fill="#475569">sorts facts into notes</text>
+
+  <!-- 4. memory -->
+  <rect x="690" y="90" width="240" height="170" rx="14" fill="#ecfdf5" stroke="#34d399" stroke-width="1.5"/>
+  <text x="810" y="128" text-anchor="middle" font-size="30">🧠</text>
+  <text x="810" y="158" text-anchor="middle" font-size="16" font-weight="600" fill="#0f172a">memory/</text>
+  <text x="810" y="186" text-anchor="middle" font-size="13" fill="#475569">long: you, people, taste, health</text>
+  <text x="810" y="206" text-anchor="middle" font-size="13" fill="#475569">short: projects, clients, plans</text>
+  <text x="810" y="236" text-anchor="middle" font-size="13" font-weight="600" fill="#047857">agents search it before helping</text>
+
+  <path d="M200 175H244" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M420 175H464" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M640 175H684" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- agents read back -->
+  <path d="M810 90C810 40 115 40 115 114" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+  <text x="462" y="34" text-anchor="middle" font-size="14" fill="#047857">next conversation: the agent already knows you</text>
+
+  <!-- archive -->
+  <rect x="690" y="300" width="240" height="70" rx="14" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="810" y="331" text-anchor="middle" font-size="16" font-weight="600" fill="#0f172a">🗄️  archive/</text>
+  <text x="810" y="353" text-anchor="middle" font-size="13" fill="#475569">unused for 180 days → out of the way</text>
+  <path d="M810 260V294" stroke="#fb923c" stroke-width="2" marker-end="url(#a)"/>
+</svg>
