@@ -2,7 +2,6 @@
 
 <img src="system/banner.svg" alt="j_brain: a second brain for your AI agents" width="100%">
 
-**A second brain for your AI agents, not for you.**
 
 Plain markdown · Claude Code · Codex · Cursor · Cleans up after itself
 
